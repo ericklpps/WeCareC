@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WeCare</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/Meta">Metas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+    <footer style="background-color:  #28A745; color: #FFFFFF; padding: 20px; text-align: center; margin-top: 30px;">
+        <p>&copy; 2024 - WeCare | Criando um futuro sustentável</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model WeCare.Models.Meta
+
+<h1>Editar Meta</h1>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="MetaId" />
+    <label>Descrição:</label>
+    <input asp-for="Descricao" />
+    <label>Categoria:</label>
+    <input asp-for="Categoria" />
+    <label>Economia Estimada:</label>
+    <input asp-for="EconomiaEstimativa" />
+    <label>Prazo:</label>
+    <input asp-for="Prazo" />
+    <button type="submit">Salvar</button>
+</form>

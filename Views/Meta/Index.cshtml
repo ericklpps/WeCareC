@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WeCare.Models.Meta>
+
+<h1>Metas</h1>
+<a href="/Meta/Create">Nova Meta</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Economia</th>
+            <th>Prazo</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var meta in Model)
+        {
+            <tr>
+                <td>@meta.Descricao</td>
+                <td>@meta.Categoria</td>
+                <td>@meta.EconomiaEstimativa</td>
+                <td>@meta.Prazo</td>
+                <td>
+                    <a href="/Meta/Edit/@meta.MetaId">Editar</a>
+                    <a href="/Meta/Delete/@meta.MetaId">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

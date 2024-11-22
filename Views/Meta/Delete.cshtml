@@ -1,0 +1,15 @@
+﻿@model WeCare.Models.Meta
+
+@{
+    ViewData["Title"] = "Excluir Meta";
+}
+
+<h1>Excluir Meta</h1>
+
+<p>Tem certeza que deseja excluir a meta "@Model.Descricao"?</p>
+
+<form asp-action="Delete">
+    <input type="hidden" name="MetaId" value="@Model.MetaId" />
+    <button type="submit">Sim, excluir</button>
+    <a href="/Meta">Cancelar</a>
+</form>

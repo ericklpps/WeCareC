@@ -1,0 +1,14 @@
+﻿@model WeCare.Models.Meta
+
+<h1>Nova Meta</h1>
+<form asp-action="Create" method="post">
+    <label>Descrição:</label>
+    <input asp-for="Descricao" />
+    <label>Categoria:</label>
+    <input asp-for="Categoria" />
+    <label>Economia Estimada:</label>
+    <input asp-for="EconomiaEstimativa" />
+    <label>Prazo:</label>
+    <input asp-for="Prazo" />
+    <button type="submit">Salvar</button>
+</form>
