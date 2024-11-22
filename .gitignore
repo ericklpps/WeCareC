@@ -1,0 +1,39 @@
+# Build Folders
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]ogs/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+
+# Cache
+.vscode/
+.vs/
+_ReSharper*/
+*~proj.tmp
+
+# Dependency directories
+packages/
+node_modules/
+
+# Visual Studio
+.idea/
+.idea_modules/
+*.iml
+.vscode/
+
+# Configuration files
+appsettings.json
+appsettings.*.json
+
+# Publish folder
+publish/
